@@ -1,0 +1,10 @@
+snowflake-connector-python
+snowflake-snowpark-python
+pandas
+requests
+python-dotenv
+fredapi
+yfinance
+boto3
+jinja2
+pytest
