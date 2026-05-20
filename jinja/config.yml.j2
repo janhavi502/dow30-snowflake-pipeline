@@ -1,0 +1,30 @@
+# ── Environment Configuration Template ────────────────────────
+# Render this file using render_config.py
+# Usage: python render_config.py --env dev
+#        python render_config.py --env prod
+
+snowflake:
+  account:   "{{ snowflake_account }}"
+  user:      "{{ snowflake_user }}"
+  password:  "{{ snowflake_password }}"
+  role:      "{{ snowflake_role }}"
+  warehouse: "{{ warehouse }}"
+  database:  "{{ database }}"
+
+schemas:
+  raw:        "{{ raw_schema }}"
+  harmonized: "{{ harmonized_schema }}"
+  analytics:  "{{ analytics_schema }}"
+
+pipeline:
+  start_date:  "2020-01-01"
+  batch_size:  "{{ batch_size }}"
+  environment: "{{ environment }}"
+
+fred:
+  api_key: "{{ fred_api_key }}"
+
+aws:
+  bucket:     "{{ aws_bucket }}"
+  region:     "{{ aws_region }}"
+  prefix:     "{{ s3_prefix }}"

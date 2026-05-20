@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+jinja/config_dev.yml
+jinja/config_prod.yml
